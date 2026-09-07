@@ -7,6 +7,10 @@ def first_function():
     print("Hello wrold")
     return {"name":"sunny"}
 
+@app.get("/newone")
+def newone():
+    return {"newone":"its working"}
+
 @app.get("/id/{id}")
 def second(id):
     return {"id":id}
